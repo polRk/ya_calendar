@@ -1,10 +1,10 @@
 module.exports = {
   dontCacheBustUrlsMatching: /\.\w{8}\./,
   staticFileGlobs: [
-    'build/*.html',
-    'build/manifest.json',
-    'build/static/**/!(*map*)'
+    'docs/*.html',
+    'docs/manifest.json',
+    'docs/static/**/!(*map*)'
   ],
-  stripPrefix: 'build/',
-  swFilePath: 'build/service-worker.js'
+  stripPrefix: 'docs/',
+  swFilePath: 'docs/service-worker.js'
 };
