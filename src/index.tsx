@@ -12,7 +12,9 @@ const render = (data: IConference[]) =>
     <App data={data}/>,
     document.getElementById('root') as HTMLElement
   );
-
+// Получение списка событий. 
+// Если мы в сети, получить список и сохранить его в localstorage
+// Если мы офлайн или нет ответа от сервера, попытаться загрузить из localstorage или присвоить пустой масив
 if (navigator.onLine) {
   request
     .then(async response => {
