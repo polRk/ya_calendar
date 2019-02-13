@@ -55,6 +55,7 @@ body {
 
 .conference__alarm-day {
   color: #0059D9;
+  cursor: pointer;
 }
 
 .conference__alarm {
